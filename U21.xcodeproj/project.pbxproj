@@ -18,6 +18,7 @@
 		FC3E64BF206FFA1100BAFC1C /* MiniMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E64BD206FFA1100BAFC1C /* MiniMenuViewController.xib */; };
 		FC3E64C3207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E64C1207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift */; };
 		FC3E64C4207003BD00BAFC1C /* MiniMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E64C2207003BD00BAFC1C /* MiniMenuCollectionViewCell.xib */; };
+		FC3E64C72070122B00BAFC1C /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E64C62070122B00BAFC1C /* SectionModel.swift */; };
 		FC887B4C206F6EE300CC760F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC887B4B206F6EE300CC760F /* AppDelegate.swift */; };
 		FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC887B4D206F6EE300CC760F /* ViewController.swift */; };
 		FC887B51206F6EE300CC760F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC887B4F206F6EE300CC760F /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		FC3E64BD206FFA1100BAFC1C /* MiniMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniMenuViewController.xib; sourceTree = "<group>"; };
 		FC3E64C1207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC3E64C2207003BD00BAFC1C /* MiniMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC3E64C62070122B00BAFC1C /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
 		FC887B48206F6EE300CC760F /* U21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC887B4B206F6EE300CC760F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC887B4D206F6EE300CC760F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FC3E64B4206FE6DB00BAFC1C /* UserModel.swift */,
+				FC3E64C62070122B00BAFC1C /* SectionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				FC3E64BE206FFA1100BAFC1C /* MiniMenuViewController.swift in Sources */,
 				FC3E64AE206FDFCF00BAFC1C /* LoginViewController.swift in Sources */,
 				FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */,
+				FC3E64C72070122B00BAFC1C /* SectionModel.swift in Sources */,
 				FC3E64B5206FE6DB00BAFC1C /* UserModel.swift in Sources */,
 				FC3E64C3207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift in Sources */,
 				FC3E64B9206FEAFA00BAFC1C /* MapViewController.swift in Sources */,
