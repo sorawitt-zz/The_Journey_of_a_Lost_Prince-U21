@@ -26,6 +26,10 @@
 		FC887B51206F6EE300CC760F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC887B4F206F6EE300CC760F /* Main.storyboard */; };
 		FC887B53206F6EE300CC760F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC887B52206F6EE300CC760F /* Assets.xcassets */; };
 		FC887B56206F6EE300CC760F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC887B54206F6EE300CC760F /* LaunchScreen.storyboard */; };
+		FCCE5F2420702593006B5FD7 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F2220702593006B5FD7 /* QuizViewController.swift */; };
+		FCCE5F2520702594006B5FD7 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F2320702593006B5FD7 /* QuizViewController.xib */; };
+		FCCE5F2920702BCC006B5FD7 /* PinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F2720702BCC006B5FD7 /* PinGameViewController.swift */; };
+		FCCE5F2A20702BCC006B5FD7 /* PinGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F2820702BCC006B5FD7 /* PinGameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		FC887B52206F6EE300CC760F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC887B55206F6EE300CC760F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC887B57206F6EE300CC760F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCCE5F2220702593006B5FD7 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		FCCE5F2320702593006B5FD7 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
+		FCCE5F2720702BCC006B5FD7 /* PinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinGameViewController.swift; sourceTree = "<group>"; };
+		FCCE5F2820702BCC006B5FD7 /* PinGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinGameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,8 @@
 				FC3E64B0206FDFD700BAFC1C /* Login */,
 				FC3E64BB206FEAFF00BAFC1C /* Map */,
 				FC3E64C0206FFA1500BAFC1C /* MiniMenu */,
+				FCCE5F2620702B3F006B5FD7 /* Quiz */,
+				FCCE5F2B20702BD1006B5FD7 /* PinGame */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -175,6 +185,24 @@
 			path = U21;
 			sourceTree = "<group>";
 		};
+		FCCE5F2620702B3F006B5FD7 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE5F2220702593006B5FD7 /* QuizViewController.swift */,
+				FCCE5F2320702593006B5FD7 /* QuizViewController.xib */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		FCCE5F2B20702BD1006B5FD7 /* PinGame */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE5F2720702BCC006B5FD7 /* PinGameViewController.swift */,
+				FCCE5F2820702BCC006B5FD7 /* PinGameViewController.xib */,
+			);
+			path = PinGame;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,9 +267,11 @@
 			files = (
 				FC3E64C4207003BD00BAFC1C /* MiniMenuCollectionViewCell.xib in Resources */,
 				FC3E64AF206FDFCF00BAFC1C /* LoginViewController.xib in Resources */,
+				FCCE5F2520702594006B5FD7 /* QuizViewController.xib in Resources */,
 				FC3E64BA206FEAFA00BAFC1C /* MapViewController.xib in Resources */,
 				FC887B56206F6EE300CC760F /* LaunchScreen.storyboard in Resources */,
 				FC3E64B3206FE13900BAFC1C /* GoogleService-Info.plist in Resources */,
+				FCCE5F2A20702BCC006B5FD7 /* PinGameViewController.xib in Resources */,
 				FC887B53206F6EE300CC760F /* Assets.xcassets in Resources */,
 				FC3E64BF206FFA1100BAFC1C /* MiniMenuViewController.xib in Resources */,
 				FC887B51206F6EE300CC760F /* Main.storyboard in Resources */,
@@ -343,12 +373,14 @@
 			files = (
 				FC3E64BE206FFA1100BAFC1C /* MiniMenuViewController.swift in Sources */,
 				FC3E64AE206FDFCF00BAFC1C /* LoginViewController.swift in Sources */,
+				FCCE5F2920702BCC006B5FD7 /* PinGameViewController.swift in Sources */,
 				FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */,
 				FB8AB5DF207025B8008A53AC /* OnboardingView.swift in Sources */,
 				FB8AB5DB20701D9D008A53AC /* LearningViewController.swift in Sources */,
 				FC3E64C72070122B00BAFC1C /* SectionModel.swift in Sources */,
 				FC3E64B5206FE6DB00BAFC1C /* UserModel.swift in Sources */,
 				FC3E64C3207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift in Sources */,
+				FCCE5F2420702593006B5FD7 /* QuizViewController.swift in Sources */,
 				FC3E64B9206FEAFA00BAFC1C /* MapViewController.swift in Sources */,
 				FC887B4C206F6EE300CC760F /* AppDelegate.swift in Sources */,
 			);
