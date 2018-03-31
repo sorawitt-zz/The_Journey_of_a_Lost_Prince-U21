@@ -12,6 +12,8 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -19,6 +21,11 @@ class MapViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func handleGoToMiniMenu() {
+        let miniMenuVC = MiniMenuViewController()
+        self.show(miniMenuVC, sender: self)
     }
     
 

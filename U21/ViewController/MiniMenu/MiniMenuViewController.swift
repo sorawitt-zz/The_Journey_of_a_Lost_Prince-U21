@@ -10,26 +10,31 @@ import UIKit
 
 class MiniMenuViewController: UIViewController {
 
+    @IBOutlet weak var miniMenuCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let nibCell = UINib(nibName: "MiniMenuCollectionViewCell", bundle: nil)
+        
+        miniMenuCollectionView.register(nibCell, forCellWithReuseIdentifier: "MiniMenuCollectionViewCell")
+        miniMenuCollectionView.delegate = self
+        miniMenuCollectionView.dataSource = self
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension MiniMenuViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MiniMenuCollectionViewCell", for: indexPath) as! MiniMenuCollectionViewCell
+        cell.titleLabel.text = "อาณาจักรล้านนา"
+        cell.detailLabel.text = "หลังจากพญามังรายรวบรวมอาณาจักรหริภุญชัยเข้ากับโยนกเชียงแสนเสร็จสิ้นแล้ว ได้ขนามนามราชอาณาจักรแห่งใหม่นี้ว่า อาณาจักรล้านนา"
+        cell.imgPreview.image = UIImage(named: "113")
+        return cell
     }
-    */
-
 }
