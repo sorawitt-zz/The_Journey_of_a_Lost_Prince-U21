@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6C4C1AA8B5476D4F50EB13C9 /* Pods_U21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566E0FF255AFD04E34BF01E4 /* Pods_U21.framework */; };
+		FB8AB5DB20701D9D008A53AC /* LearningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AB5DA20701D9D008A53AC /* LearningViewController.swift */; };
+		FB8AB5DF207025B8008A53AC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8AB5DE207025B8008A53AC /* OnboardingView.swift */; };
 		FC3E64AE206FDFCF00BAFC1C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E64AC206FDFCF00BAFC1C /* LoginViewController.swift */; };
 		FC3E64AF206FDFCF00BAFC1C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E64AD206FDFCF00BAFC1C /* LoginViewController.xib */; };
 		FC3E64B3206FE13900BAFC1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC3E64B2206FE13900BAFC1C /* GoogleService-Info.plist */; };
@@ -30,6 +32,8 @@
 		566E0FF255AFD04E34BF01E4 /* Pods_U21.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U21.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		743A5DE7899CFDC4686441E7 /* Pods-U21.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U21.release.xcconfig"; path = "Pods/Target Support Files/Pods-U21/Pods-U21.release.xcconfig"; sourceTree = "<group>"; };
 		96A964C179D81CED1D4C7CF8 /* Pods-U21.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U21.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U21/Pods-U21.debug.xcconfig"; sourceTree = "<group>"; };
+		FB8AB5DA20701D9D008A53AC /* LearningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewController.swift; sourceTree = "<group>"; };
+		FB8AB5DE207025B8008A53AC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		FC3E64AC206FDFCF00BAFC1C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FC3E64AD206FDFCF00BAFC1C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FC3E64B2206FE13900BAFC1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 				FC3E64B2206FE13900BAFC1C /* GoogleService-Info.plist */,
 				FC887B4B206F6EE300CC760F /* AppDelegate.swift */,
 				FC887B4D206F6EE300CC760F /* ViewController.swift */,
+				FB8AB5DA20701D9D008A53AC /* LearningViewController.swift */,
+				FB8AB5DE207025B8008A53AC /* OnboardingView.swift */,
 				FC887B4F206F6EE300CC760F /* Main.storyboard */,
 				FC887B52206F6EE300CC760F /* Assets.xcassets */,
 				FC887B54206F6EE300CC760F /* LaunchScreen.storyboard */,
@@ -338,6 +344,8 @@
 				FC3E64BE206FFA1100BAFC1C /* MiniMenuViewController.swift in Sources */,
 				FC3E64AE206FDFCF00BAFC1C /* LoginViewController.swift in Sources */,
 				FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */,
+				FB8AB5DF207025B8008A53AC /* OnboardingView.swift in Sources */,
+				FB8AB5DB20701D9D008A53AC /* LearningViewController.swift in Sources */,
 				FC3E64C72070122B00BAFC1C /* SectionModel.swift in Sources */,
 				FC3E64B5206FE6DB00BAFC1C /* UserModel.swift in Sources */,
 				FC3E64C3207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift in Sources */,
