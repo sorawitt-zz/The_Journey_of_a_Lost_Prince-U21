@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C4C1AA8B5476D4F50EB13C9 /* Pods_U21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566E0FF255AFD04E34BF01E4 /* Pods_U21.framework */; };
 		FC887B4C206F6EE300CC760F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC887B4B206F6EE300CC760F /* AppDelegate.swift */; };
 		FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC887B4D206F6EE300CC760F /* ViewController.swift */; };
 		FC887B51206F6EE300CC760F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC887B4F206F6EE300CC760F /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		566E0FF255AFD04E34BF01E4 /* Pods_U21.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U21.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743A5DE7899CFDC4686441E7 /* Pods-U21.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U21.release.xcconfig"; path = "Pods/Target Support Files/Pods-U21/Pods-U21.release.xcconfig"; sourceTree = "<group>"; };
+		96A964C179D81CED1D4C7CF8 /* Pods-U21.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U21.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U21/Pods-U21.debug.xcconfig"; sourceTree = "<group>"; };
 		FC887B48206F6EE300CC760F /* U21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC887B4B206F6EE300CC760F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC887B4D206F6EE300CC760F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C4C1AA8B5476D4F50EB13C9 /* Pods_U21.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B16889A814E812E0B6BA9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96A964C179D81CED1D4C7CF8 /* Pods-U21.debug.xcconfig */,
+				743A5DE7899CFDC4686441E7 /* Pods-U21.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		49437ED381F3096D8EE209B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				566E0FF255AFD04E34BF01E4 /* Pods_U21.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC887B3F206F6EE300CC760F = {
 			isa = PBXGroup;
 			children = (
 				FC887B4A206F6EE300CC760F /* U21 */,
 				FC887B49206F6EE300CC760F /* Products */,
+				13B16889A814E812E0B6BA9D /* Pods */,
+				49437ED381F3096D8EE209B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC887B5A206F6EE300CC760F /* Build configuration list for PBXNativeTarget "U21" */;
 			buildPhases = (
+				9A1D33CC9E05ED79A961C8F0 /* [CP] Check Pods Manifest.lock */,
 				FC887B44206F6EE300CC760F /* Sources */,
 				FC887B45206F6EE300CC760F /* Frameworks */,
 				FC887B46206F6EE300CC760F /* Resources */,
+				9723F27007CD1489BFC0634F /* [CP] Embed Pods Frameworks */,
+				7E0D755E89F04C09D9C0D867 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,90 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E0D755E89F04C09D9C0D867 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-U21/Pods-U21-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9723F27007CD1489BFC0634F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-U21/Pods-U21-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-U21/Pods-U21-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1D33CC9E05ED79A961C8F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-U21-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC887B44206F6EE300CC760F /* Sources */ = {
@@ -272,6 +383,7 @@
 		};
 		FC887B5B206F6EE300CC760F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A964C179D81CED1D4C7CF8 /* Pods-U21.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +399,7 @@
 		};
 		FC887B5C206F6EE300CC760F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743A5DE7899CFDC4686441E7 /* Pods-U21.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
