@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,13 +21,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgLogin" translatesAutoresizingMaskIntoConstraints="NO" id="vjs-Ct-kBQ">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgLogin" translatesAutoresizingMaskIntoConstraints="NO" id="vjs-Ct-kBQ">
+                    <rect key="frame" x="-4" y="0.0" width="381" height="667"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vjs-Ct-kBQ" secondAttribute="height" multiplier="381:667" id="osx-ri-BkW"/>
+                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mij-hv-CXX">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mij-hv-CXX">
                     <rect key="frame" x="83" y="570" width="209" height="50"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="mij-hv-CXX" secondAttribute="height" multiplier="209:50" id="dRv-QB-ree"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                     <state key="normal" backgroundImage="playButton">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,6 +41,15 @@
                     </connections>
                 </button>
             </subviews>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mij-hv-CXX" secondAttribute="trailing" constant="83" id="O2c-9Q-rgb"/>
+                <constraint firstItem="mij-hv-CXX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="550" id="QRh-lV-Kz6"/>
+                <constraint firstAttribute="trailing" secondItem="vjs-Ct-kBQ" secondAttribute="trailing" constant="-2" id="SSY-0x-Rvu"/>
+                <constraint firstItem="mij-hv-CXX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="83" id="Yds-Fu-sLA"/>
+                <constraint firstItem="vjs-Ct-kBQ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ghF-Oo-WZ3"/>
+                <constraint firstItem="vjs-Ct-kBQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-4" id="toD-yY-5KL"/>
+                <constraint firstItem="vjs-Ct-kBQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zDV-sA-scf"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="54.5"/>
         </view>
