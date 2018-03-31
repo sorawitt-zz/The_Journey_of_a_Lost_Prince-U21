@@ -31,10 +31,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-0o-FyL">
-                                <rect key="frame" x="0.0" y="63" width="375" height="474"/>
+                                <rect key="frame" x="0.0" y="63" width="375" height="524"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Nmq-kt-eAN">
-                                    <size key="itemSize" width="250" height="375"/>
+                                    <size key="itemSize" width="375" height="474"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
@@ -42,10 +42,10 @@
                             </collectionView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="d7F-0o-FyL" secondAttribute="trailing" id="Ghz-qR-GPD"/>
                             <constraint firstItem="d7F-0o-FyL" firstAttribute="leading" secondItem="2U8-sp-vMb" secondAttribute="leading" id="IR7-BV-KcY"/>
                             <constraint firstItem="d7F-0o-FyL" firstAttribute="top" secondItem="2U8-sp-vMb" secondAttribute="top" constant="63" id="Wnp-16-cfy"/>
-                            <constraint firstAttribute="bottom" secondItem="d7F-0o-FyL" secondAttribute="bottom" constant="110" id="aO4-Oj-7WA"/>
+                            <constraint firstAttribute="bottom" secondItem="d7F-0o-FyL" secondAttribute="bottom" constant="60" id="aO4-Oj-7WA"/>
+                            <constraint firstAttribute="trailing" secondItem="d7F-0o-FyL" secondAttribute="trailing" id="wBC-dr-2gL"/>
                         </constraints>
                     </view>
                     <blurEffect style="light"/>

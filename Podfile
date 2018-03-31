@@ -18,5 +18,6 @@ pod 'Kingfisher', '~> 4.0'
 pod 'SwiftLint'
 pod 'PKHUD', '~> 5.0'
 pod 'CodableFirebase'
+pod 'paper-onboarding'
 
 end
