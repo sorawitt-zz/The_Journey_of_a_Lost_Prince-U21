@@ -14,6 +14,8 @@
 		FC3E64B5206FE6DB00BAFC1C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E64B4206FE6DB00BAFC1C /* UserModel.swift */; };
 		FC3E64B9206FEAFA00BAFC1C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E64B7206FEAFA00BAFC1C /* MapViewController.swift */; };
 		FC3E64BA206FEAFA00BAFC1C /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E64B8206FEAFA00BAFC1C /* MapViewController.xib */; };
+		FC3E64BE206FFA1100BAFC1C /* MiniMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3E64BC206FFA1100BAFC1C /* MiniMenuViewController.swift */; };
+		FC3E64BF206FFA1100BAFC1C /* MiniMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC3E64BD206FFA1100BAFC1C /* MiniMenuViewController.xib */; };
 		FC887B4C206F6EE300CC760F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC887B4B206F6EE300CC760F /* AppDelegate.swift */; };
 		FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC887B4D206F6EE300CC760F /* ViewController.swift */; };
 		FC887B51206F6EE300CC760F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC887B4F206F6EE300CC760F /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		FC3E64B4206FE6DB00BAFC1C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FC3E64B7206FEAFA00BAFC1C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FC3E64B8206FEAFA00BAFC1C /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		FC3E64BC206FFA1100BAFC1C /* MiniMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniMenuViewController.swift; sourceTree = "<group>"; };
+		FC3E64BD206FFA1100BAFC1C /* MiniMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniMenuViewController.xib; sourceTree = "<group>"; };
 		FC887B48206F6EE300CC760F /* U21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = U21.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC887B4B206F6EE300CC760F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC887B4D206F6EE300CC760F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			children = (
 				FC3E64B0206FDFD700BAFC1C /* Login */,
 				FC3E64BB206FEAFF00BAFC1C /* Map */,
+				FC3E64C0206FFA1500BAFC1C /* MiniMenu */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -102,6 +107,15 @@
 				FC3E64B8206FEAFA00BAFC1C /* MapViewController.xib */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		FC3E64C0206FFA1500BAFC1C /* MiniMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FC3E64BC206FFA1100BAFC1C /* MiniMenuViewController.swift */,
+				FC3E64BD206FFA1100BAFC1C /* MiniMenuViewController.xib */,
+			);
+			path = MiniMenu;
 			sourceTree = "<group>";
 		};
 		FC887B3F206F6EE300CC760F = {
@@ -205,6 +219,7 @@
 				FC887B56206F6EE300CC760F /* LaunchScreen.storyboard in Resources */,
 				FC3E64B3206FE13900BAFC1C /* GoogleService-Info.plist in Resources */,
 				FC887B53206F6EE300CC760F /* Assets.xcassets in Resources */,
+				FC3E64BF206FFA1100BAFC1C /* MiniMenuViewController.xib in Resources */,
 				FC887B51206F6EE300CC760F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC3E64BE206FFA1100BAFC1C /* MiniMenuViewController.swift in Sources */,
 				FC3E64AE206FDFCF00BAFC1C /* LoginViewController.swift in Sources */,
 				FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */,
 				FC3E64B5206FE6DB00BAFC1C /* UserModel.swift in Sources */,
