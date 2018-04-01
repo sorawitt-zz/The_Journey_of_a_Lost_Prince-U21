@@ -34,6 +34,7 @@
 		FCCE5F2F207072EE006B5FD7 /* LeaderBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F2D207072EE006B5FD7 /* LeaderBoardViewController.xib */; };
 		FCCE5F33207074A6006B5FD7 /* LeaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F31207074A6006B5FD7 /* LeaderBoardTableViewCell.swift */; };
 		FCCE5F34207074A6006B5FD7 /* LeaderBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F32207074A6006B5FD7 /* LeaderBoardTableViewCell.xib */; };
+		FCCE5F37207091F5006B5FD7 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F36207091F5006B5FD7 /* QuizModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		FCCE5F2D207072EE006B5FD7 /* LeaderBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardViewController.xib; sourceTree = "<group>"; };
 		FCCE5F31207074A6006B5FD7 /* LeaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewCell.swift; sourceTree = "<group>"; };
 		FCCE5F32207074A6006B5FD7 /* LeaderBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardTableViewCell.xib; sourceTree = "<group>"; };
+		FCCE5F36207091F5006B5FD7 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				FC3E64B4206FE6DB00BAFC1C /* UserModel.swift */,
 				FC3E64C62070122B00BAFC1C /* SectionModel.swift */,
+				FCCE5F36207091F5006B5FD7 /* QuizModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				FC3E64AE206FDFCF00BAFC1C /* LoginViewController.swift in Sources */,
 				FCCE5F2920702BCC006B5FD7 /* PinGameViewController.swift in Sources */,
 				FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */,
+				FCCE5F37207091F5006B5FD7 /* QuizModel.swift in Sources */,
 				FB8AB5DF207025B8008A53AC /* OnboardingView.swift in Sources */,
 				FB8AB5DB20701D9D008A53AC /* LearningViewController.swift in Sources */,
 				FC3E64C72070122B00BAFC1C /* SectionModel.swift in Sources */,
