@@ -68,13 +68,10 @@ extension LeaderBoardViewController: UITableViewDelegate, UITableViewDataSource 
         let cell = tableView.dequeueReusableCell(withIdentifier: "LeaderBoardTableViewCell", for: indexPath) as! LeaderBoardTableViewCell
         let scoreItem = scoreData[indexPath.row]
         
+        cell.isUserInteractionEnabled = false
+
         //indexitem
         cell.indexItem.text = "\(indexPath.row+1)"
-        cell.indexItem.layer.borderWidth = 1
-        cell.indexItem.layer.masksToBounds = false
-        cell.indexItem.layer.borderColor = UIColor.black.cgColor
-        cell.indexItem.layer.cornerRadius = 5
-        cell.indexItem.clipsToBounds = true
         
         //score
         cell.score.text = "\(scoreItem.score)"
@@ -82,17 +79,9 @@ extension LeaderBoardViewController: UITableViewDelegate, UITableViewDataSource 
         //profile
         let url = URL(string: scoreItem.avatar)
         cell.profile.kf.setImage(with: url)
-        cell.profile.layer.borderWidth = 1
-        cell.profile.layer.masksToBounds = false
-        cell.profile.layer.borderColor = UIColor.black.cgColor
-        cell.profile.layer.cornerRadius = cell.profile.frame.height/2
-        cell.profile.clipsToBounds = true
         
         //username
         cell.username.text = scoreItem.name
-        
-        //view
-        cell.leaderBoardView.layer.cornerRadius = 15
         
         return cell
     }
