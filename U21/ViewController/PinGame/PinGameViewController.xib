@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PinGameViewController" customModule="U21" customModuleProvider="target">
             <connections>
+                <outlet property="pinLabel" destination="1W0-fF-SLj" id="gFP-22-A3j"/>
+                <outlet property="pinTextField" destination="Fra-7Q-ecX" id="rGa-sv-Coq"/>
+                <outlet property="startGameBtn" destination="xak-Ze-0cS" id="aeW-qd-3TU"/>
+                <outlet property="statusText" destination="AzZ-Gs-iwQ" id="0U9-Th-6UX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,13 +31,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fra-7Q-ecX">
-                    <rect key="frame" x="58" y="290" width="258" height="30"/>
+                    <rect key="frame" x="58" y="331" width="258" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PIN: M2OL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W0-fF-SLj">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PIN: _ _ _ _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W0-fF-SLj">
                     <rect key="frame" x="58" y="163" width="258" height="43"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -41,17 +45,56 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzZ-Gs-iwQ">
-                    <rect key="frame" x="58" y="367" width="258" height="21"/>
+                    <rect key="frame" x="58" y="287" width="258" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-ab-xA0">
+                    <rect key="frame" x="58" y="227" width="258" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.78291556679999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="GET PIN">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="getPin" destination="-1" eventType="touchUpInside" id="nyM-ts-2qj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xak-Ze-0cS">
+                    <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                    <color key="backgroundColor" red="0.0058865017360000002" green="0.26290226900000002" blue="0.38958431189999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="lnD-S9-bwD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                    <state key="normal" title="START">
+                        <color key="titleColor" red="1" green="0.78291556679999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startGame" destination="-1" eventType="touchUpInside" id="ac8-hz-Vec"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-aW-Zo6">
+                    <rect key="frame" x="58" y="395" width="258" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.78291556679999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="ACCESS">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="accessPIN" destination="-1" eventType="touchUpInside" id="Bje-Wu-cex"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.68627450980392157" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="xak-Ze-0cS" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="I4C-9f-Wnr"/>
+                <constraint firstItem="xak-Ze-0cS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MyX-Vu-vQU"/>
                 <constraint firstItem="fEA-Gb-61J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TQY-XS-2YA"/>
                 <constraint firstItem="fEA-Gb-61J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="n9Z-Fj-Ru5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xak-Ze-0cS" secondAttribute="trailing" id="ufQ-15-yvH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="33.5" y="98.5"/>
