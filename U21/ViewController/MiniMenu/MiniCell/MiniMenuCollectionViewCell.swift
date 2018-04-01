@@ -13,7 +13,6 @@ class MiniMenuCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
-    @IBOutlet weak var startBtn: UIButton!
     @IBOutlet weak var imgPreview: UIImageView!
     
     override func awakeFromNib() {

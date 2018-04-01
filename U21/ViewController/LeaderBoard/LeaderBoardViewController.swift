@@ -13,6 +13,7 @@ import CodableFirebase
 
 class LeaderBoardViewController: UIViewController {
 
+    @IBOutlet weak var backHome: UIButton!
     @IBOutlet weak var leaderBoard: UITableView!
     var scoreData: [UserModel] = []
     
@@ -24,6 +25,11 @@ class LeaderBoardViewController: UIViewController {
         leaderBoard.dataSource = self
         fetchDataFromScore()
         fetchData()
+    }
+    
+    @IBAction func backback() {
+        let mapVC = MapViewController()
+        show(mapVC, sender: self)
     }
     
     func fetchData() {

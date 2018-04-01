@@ -28,31 +28,18 @@
                             <rect key="frame" x="0.0" y="0.0" width="406" height="128"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRD-uW-j74">
-                                    <rect key="frame" x="16" y="90" width="374" height="30"/>
-                                    <color key="backgroundColor" red="1" green="0.49457465280000001" blue="0.043610928729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="iS3-mr-1J5"/>
-                                    </constraints>
-                                    <state key="normal" title="Button">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAb-0g-pNv">
-                                    <rect key="frame" x="16" y="8" width="374" height="74"/>
+                                    <rect key="frame" x="16" y="8" width="374" height="104"/>
                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="uRD-uW-j74" secondAttribute="trailing" constant="16" id="8zQ-lR-B1S"/>
                                 <constraint firstItem="AAb-0g-pNv" firstAttribute="top" secondItem="pHc-Cc-UcW" secondAttribute="top" constant="8" id="A4t-MS-IqO"/>
-                                <constraint firstItem="AAb-0g-pNv" firstAttribute="trailing" secondItem="uRD-uW-j74" secondAttribute="trailing" id="JXc-RC-wiV"/>
-                                <constraint firstAttribute="bottom" secondItem="uRD-uW-j74" secondAttribute="bottom" constant="8" id="No8-Ya-2BO"/>
-                                <constraint firstItem="uRD-uW-j74" firstAttribute="top" secondItem="AAb-0g-pNv" secondAttribute="bottom" constant="8" id="Zdx-mh-eW4"/>
-                                <constraint firstItem="AAb-0g-pNv" firstAttribute="leading" secondItem="uRD-uW-j74" secondAttribute="leading" id="dBl-bD-Ezu"/>
-                                <constraint firstItem="uRD-uW-j74" firstAttribute="leading" secondItem="pHc-Cc-UcW" secondAttribute="leading" constant="16" id="eKC-Jc-QCd"/>
+                                <constraint firstAttribute="bottom" secondItem="AAb-0g-pNv" secondAttribute="bottom" constant="16" id="RZw-V5-tSV"/>
+                                <constraint firstItem="AAb-0g-pNv" firstAttribute="leading" secondItem="pHc-Cc-UcW" secondAttribute="leading" constant="16" id="fAC-ES-76V"/>
+                                <constraint firstAttribute="trailing" secondItem="AAb-0g-pNv" secondAttribute="trailing" constant="16" id="nGz-6N-4Dc"/>
                             </constraints>
                         </view>
                         <constraints>
@@ -87,7 +74,6 @@
             <connections>
                 <outlet property="detailLabel" destination="AAb-0g-pNv" id="QOy-vM-66K"/>
                 <outlet property="imgPreview" destination="Dtm-sp-MTT" id="2CJ-uf-Kvf"/>
-                <outlet property="startBtn" destination="uRD-uW-j74" id="7Aj-73-JcX"/>
                 <outlet property="titleLabel" destination="CBH-dA-JGb" id="Q0U-HH-pIJ"/>
             </connections>
             <point key="canvasLocation" x="213" y="36.5"/>

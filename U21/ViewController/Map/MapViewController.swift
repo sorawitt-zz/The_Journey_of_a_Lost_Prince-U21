@@ -7,25 +7,32 @@
 //
 
 import UIKit
+import Firebase
 
 class MapViewController: UIViewController {
 
+    @IBOutlet weak var score: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-        // Do any additional setup after loading the view.
+        guard let uidd = Auth.auth().currentUser?.uid else { return }
+        Database.database().reference().child("Users").child(uidd).child("score").observe(.value) { (snapshot) in
+            print(snapshot.value)
+            let scorePoint = snapshot.value as! Int
+            self.score.text = "\(scorePoint)"
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func handleGoToMiniMenu() {
         let miniMenuVC = MiniMenuViewController()
         self.show(miniMenuVC, sender: self)
+    }
+    
+    @IBAction func handleGoTOBoard() {
+        let ldVC = LeaderBoardViewController()
+        self.show(ldVC, sender: self)
     }
   
 
