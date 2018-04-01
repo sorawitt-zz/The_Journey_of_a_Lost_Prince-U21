@@ -44,7 +44,7 @@ extension MiniMenuViewController: UICollectionViewDelegate, UICollectionViewData
         cell.titleLabel.text = section.tile
         cell.detailLabel.text = section.detail
         cell.imgPreview.image = UIImage(named: section.img)
-        if section.status == "unavailable" {
+        if section.status == "unavaliable" {
             cell.alpha = 0.5
             cell.isUserInteractionEnabled = false
         }

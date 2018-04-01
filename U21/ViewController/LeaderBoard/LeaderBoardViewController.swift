@@ -67,10 +67,20 @@ extension LeaderBoardViewController: UITableViewDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LeaderBoardTableViewCell", for: indexPath) as! LeaderBoardTableViewCell
         let scoreItem = scoreData[indexPath.row]
+        
+        cell.isUserInteractionEnabled = false
+
+        //indexitem
         cell.indexItem.text = "\(indexPath.row+1)"
+        
+        //score
         cell.score.text = "\(scoreItem.score)"
+        
+        //profile
         let url = URL(string: scoreItem.avatar)
         cell.profile.kf.setImage(with: url)
+        
+        //username
         cell.username.text = scoreItem.name
         
         return cell
