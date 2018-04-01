@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         
-        window?.rootViewController = LeaderBoardViewController()
+//        window?.rootViewController = LeaderBoardViewController()
 //        if Auth.auth().currentUser != nil {
 //            window?.rootViewController = MapViewController()
 //        }else {
