@@ -19,12 +19,11 @@ class LearningViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
 }
 
 extension LearningViewController: PaperOnboardingDataSource {
     func onboardingItemsCount() -> Int {
-        return 2
+        return 4
     }
     
     func onboardingItem(at index: Int) -> OnboardingItemInfo {
@@ -36,7 +35,7 @@ extension LearningViewController: PaperOnboardingDataSource {
         let titleFont = UIFont(name: "HelveticaNeue-Bold", size: 18)!
         let descripFont = UIFont(name: "HelveticaNeue", size: 14)!
         
-        return [OnboardingItemInfo(informationImage: UIImage(named: "huhu")!, title: "KUY", description: "Kuy", pageIcon: UIImage(named: "huhu")!, color: .red, titleColor: .yellow, descriptionColor: .blue, titleFont: titleFont, descriptionFont: descripFont),OnboardingItemInfo(informationImage: UIImage(named: "huhu")!, title: "KUY", description: "Kuy", pageIcon: UIImage(named: "huhu")!, color: .blue, titleColor: .yellow, descriptionColor: .blue, titleFont: titleFont, descriptionFont: descripFont)][index]
+        return [OnboardingItemInfo(informationImage: UIImage(named: "huhu")!, title: "eiei", description: "eiei", pageIcon: UIImage(named: "huhu")!, color: .red, titleColor: .yellow, descriptionColor: .blue, titleFont: titleFont, descriptionFont: descripFont), OnboardingItemInfo(informationImage: UIImage(named: "huhu")!, title: "eiei", description: "eiei", pageIcon: UIImage(named: "huhu")!, color: .blue, titleColor: .yellow, descriptionColor: .blue, titleFont: titleFont, descriptionFont: descripFont), OnboardingItemInfo(informationImage: UIImage(named: "huhu")!, title: "eiei", description: "eiei", pageIcon: UIImage(named: "huhu")!, color: .blue, titleColor: .yellow, descriptionColor: .blue, titleFont: titleFont, descriptionFont: descripFont), OnboardingItemInfo(informationImage: UIImage(named: "huhu")!, title: "eiei", description: "eiei", pageIcon: UIImage(named: "huhu")!, color: .blue, titleColor: .yellow, descriptionColor: .blue, titleFont: titleFont, descriptionFont: descripFont)][index]
     }
     
     
