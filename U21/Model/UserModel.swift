@@ -15,4 +15,9 @@ struct UserModel: Codable {
     let avatar: String
     let email: String
     let score: Int
+    
+    func deleteLastname() -> String {
+        name =
+        return
+    }
 }

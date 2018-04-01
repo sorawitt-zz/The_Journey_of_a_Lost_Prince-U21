@@ -15,6 +15,7 @@ class LeaderBoardTableViewCell: UITableViewCell {
     @IBOutlet weak var username: UILabel!
     @IBOutlet weak var score: UILabel!
     @IBOutlet weak var indexItem: UILabel!
+    @IBOutlet weak var leaderBoardView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
