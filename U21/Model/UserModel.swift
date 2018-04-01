@@ -11,8 +11,8 @@ import CodableFirebase
 
 struct UserModel: Codable {
     let uid: String
-    let displayName: String
-    let profileImgUrl: String
+    let name: String
+    let avatar: String
     let email: String
     let score: Int
 }

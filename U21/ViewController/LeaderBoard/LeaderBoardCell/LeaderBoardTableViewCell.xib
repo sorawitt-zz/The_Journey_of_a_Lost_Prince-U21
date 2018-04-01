@@ -60,7 +60,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="24" y="136"/>
+            <connections>
+                <outlet property="indexItem" destination="T3y-X3-8qm" id="e7h-IW-prp"/>
+                <outlet property="profile" destination="NgN-yA-Mke" id="fNp-C2-dgR"/>
+                <outlet property="score" destination="QyN-Xw-fw2" id="p3K-gw-zfd"/>
+                <outlet property="username" destination="Pch-ht-y2y" id="QFQ-rW-13n"/>
+            </connections>
+            <point key="canvasLocation" x="37" y="148"/>
         </tableViewCell>
     </objects>
 </document>

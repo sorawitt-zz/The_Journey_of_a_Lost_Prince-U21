@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
                 }
                 guard let userRaw = user else { return }
                 let userRef = Database.database().reference(withPath: "Users")
-                let user = UserModel(uid: userRaw.uid, displayName: userRaw.displayName!, profileImgUrl: "\(userRaw.photoURL!)", email: userRaw.email!, score: 0)
+                let user = UserModel(uid: userRaw.uid, name: userRaw.displayName!, avatar: "\(userRaw.photoURL!)", email: userRaw.email!, score: 0)
                 //let userValue = ["uid": userRaw.uid, "name": userRaw.displayName!, "avatar": userRaw.photoURL!, "email": userRaw.email!] as [String : Any]
                 userRef.child(user.uid).setValue(["uid": userRaw.uid, "name": userRaw.displayName!, "avatar": "\(userRaw.photoURL!)", "email": userRaw.email!, "score": 0])
                 
