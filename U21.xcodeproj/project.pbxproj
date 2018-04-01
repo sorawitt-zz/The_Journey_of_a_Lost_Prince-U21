@@ -28,6 +28,10 @@
 		FCCE5F2520702594006B5FD7 /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F2320702593006B5FD7 /* QuizViewController.xib */; };
 		FCCE5F2920702BCC006B5FD7 /* PinGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F2720702BCC006B5FD7 /* PinGameViewController.swift */; };
 		FCCE5F2A20702BCC006B5FD7 /* PinGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F2820702BCC006B5FD7 /* PinGameViewController.xib */; };
+		FCCE5F2E207072EE006B5FD7 /* LeaderBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F2C207072EE006B5FD7 /* LeaderBoardViewController.swift */; };
+		FCCE5F2F207072EE006B5FD7 /* LeaderBoardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F2D207072EE006B5FD7 /* LeaderBoardViewController.xib */; };
+		FCCE5F33207074A6006B5FD7 /* LeaderBoardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCE5F31207074A6006B5FD7 /* LeaderBoardTableViewCell.swift */; };
+		FCCE5F34207074A6006B5FD7 /* LeaderBoardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCCE5F32207074A6006B5FD7 /* LeaderBoardTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		FCCE5F2320702593006B5FD7 /* QuizViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 		FCCE5F2720702BCC006B5FD7 /* PinGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinGameViewController.swift; sourceTree = "<group>"; };
 		FCCE5F2820702BCC006B5FD7 /* PinGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinGameViewController.xib; sourceTree = "<group>"; };
+		FCCE5F2C207072EE006B5FD7 /* LeaderBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardViewController.swift; sourceTree = "<group>"; };
+		FCCE5F2D207072EE006B5FD7 /* LeaderBoardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardViewController.xib; sourceTree = "<group>"; };
+		FCCE5F31207074A6006B5FD7 /* LeaderBoardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardTableViewCell.swift; sourceTree = "<group>"; };
+		FCCE5F32207074A6006B5FD7 /* LeaderBoardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderBoardTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +112,7 @@
 				FC3E64C0206FFA1500BAFC1C /* MiniMenu */,
 				FCCE5F2620702B3F006B5FD7 /* Quiz */,
 				FCCE5F2B20702BD1006B5FD7 /* PinGame */,
+				FCCE5F30207072F4006B5FD7 /* LeaderBoard */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -197,6 +206,25 @@
 			path = PinGame;
 			sourceTree = "<group>";
 		};
+		FCCE5F30207072F4006B5FD7 /* LeaderBoard */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE5F2C207072EE006B5FD7 /* LeaderBoardViewController.swift */,
+				FCCE5F2D207072EE006B5FD7 /* LeaderBoardViewController.xib */,
+				FCCE5F35207074AA006B5FD7 /* LeaderBoardCell */,
+			);
+			path = LeaderBoard;
+			sourceTree = "<group>";
+		};
+		FCCE5F35207074AA006B5FD7 /* LeaderBoardCell */ = {
+			isa = PBXGroup;
+			children = (
+				FCCE5F31207074A6006B5FD7 /* LeaderBoardTableViewCell.swift */,
+				FCCE5F32207074A6006B5FD7 /* LeaderBoardTableViewCell.xib */,
+			);
+			path = LeaderBoardCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,10 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC3E64C4207003BD00BAFC1C /* MiniMenuCollectionViewCell.xib in Resources */,
+				FCCE5F34207074A6006B5FD7 /* LeaderBoardTableViewCell.xib in Resources */,
 				FC3E64AF206FDFCF00BAFC1C /* LoginViewController.xib in Resources */,
 				FCCE5F2520702594006B5FD7 /* QuizViewController.xib in Resources */,
 				FC3E64BA206FEAFA00BAFC1C /* MapViewController.xib in Resources */,
 				FC887B56206F6EE300CC760F /* LaunchScreen.storyboard in Resources */,
+				FCCE5F2F207072EE006B5FD7 /* LeaderBoardViewController.xib in Resources */,
 				FC3E64B3206FE13900BAFC1C /* GoogleService-Info.plist in Resources */,
 				FCCE5F2A20702BCC006B5FD7 /* PinGameViewController.xib in Resources */,
 				FC887B53206F6EE300CC760F /* Assets.xcassets in Resources */,
@@ -370,8 +400,10 @@
 				FCCE5F2920702BCC006B5FD7 /* PinGameViewController.swift in Sources */,
 				FC887B4E206F6EE300CC760F /* ViewController.swift in Sources */,
 				FC3E64C72070122B00BAFC1C /* SectionModel.swift in Sources */,
+				FCCE5F33207074A6006B5FD7 /* LeaderBoardTableViewCell.swift in Sources */,
 				FC3E64B5206FE6DB00BAFC1C /* UserModel.swift in Sources */,
 				FC3E64C3207003BD00BAFC1C /* MiniMenuCollectionViewCell.swift in Sources */,
+				FCCE5F2E207072EE006B5FD7 /* LeaderBoardViewController.swift in Sources */,
 				FCCE5F2420702593006B5FD7 /* QuizViewController.swift in Sources */,
 				FC3E64B9206FEAFA00BAFC1C /* MapViewController.swift in Sources */,
 				FC887B4C206F6EE300CC760F /* AppDelegate.swift in Sources */,

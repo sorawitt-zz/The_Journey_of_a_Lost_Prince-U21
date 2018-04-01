@@ -31,20 +31,20 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="Y8C-JN-WSu"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dr-7a-QFt">
-                    <rect key="frame" x="16" y="336" width="343" height="104"/>
-                    <color key="backgroundColor" red="1" green="0.78291556684803298" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="77"/>
+                    <rect key="frame" x="16" y="336" width="343" height="113"/>
+                    <color key="backgroundColor" red="0.0" green="0.68627450980000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="84"/>
                     <state key="normal" title="True">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-Jl-Oac">
-                    <rect key="frame" x="16" y="456" width="343" height="104"/>
+                    <rect key="frame" x="16" y="465" width="343" height="104"/>
                     <color key="backgroundColor" red="1" green="0.43588946519129801" blue="0.3787878708563851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="77"/>
                     <state key="normal" title="False">
@@ -59,7 +59,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.066666666669999999" green="0.6705882353" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="xhH-Jl-Oac" firstAttribute="leading" secondItem="2dr-7a-QFt" secondAttribute="leading" id="5lF-bQ-5Ma"/>
                 <constraint firstItem="wwf-vI-67q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="66x-yo-Paq"/>

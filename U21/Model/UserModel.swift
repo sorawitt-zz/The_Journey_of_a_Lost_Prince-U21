@@ -7,10 +7,12 @@
 //
 
 import Foundation
+import CodableFirebase
 
-struct UserModel {
+struct UserModel: Codable {
     let uid: String
     let displayName: String
     let profileImgUrl: String
     let email: String
+    let score: Int
 }
