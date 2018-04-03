@@ -19,5 +19,6 @@ pod 'SwiftLint'
 pod 'PKHUD', '~> 5.0'
 pod 'CodableFirebase'
 pod 'paper-onboarding'
+pod 'IQKeyboardManagerSwift'
 
 end

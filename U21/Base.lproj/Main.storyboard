@@ -28,7 +28,7 @@
         <!--Learning View Controller-->
         <scene sceneID="rq2-Dq-3lP">
             <objects>
-                <viewController id="Vcl-qT-zle" customClass="LearningViewController" customModule="U21" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LearningViewController" id="Vcl-qT-zle" customClass="LearningViewController" customModule="U21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IRA-5h-c37">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

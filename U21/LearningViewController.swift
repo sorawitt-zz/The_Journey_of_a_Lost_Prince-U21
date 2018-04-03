@@ -13,10 +13,25 @@ class LearningViewController: UIViewController {
     
     @IBOutlet weak var onBoardingObj: OnboardingView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         onBoardingObj.dataSource = self
+        let buttonWidth: CGFloat = 100
+        
+        let button = UIButton(frame: CGRect(x: view.bounds.width-buttonWidth, y: 0, width: buttonWidth, height: 50))
+        button.setTitle("skip", for: .normal)
+        button.addTarget(self, action: #selector(nextViewGame), for: .touchUpInside)
+        
+        self.view.addSubview(button)
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func nextViewGame() {
+        let pinVC = PinGameViewController()
+        show(pinVC, sender: self)
     }
 
 }
@@ -35,9 +50,12 @@ extension LearningViewController: PaperOnboardingDataSource {
         let titleFont = UIFont(name: "HelveticaNeue-Bold", size: 18)!
         let descripFont = UIFont(name: "HelveticaNeue", size: 14)!
         
-        return [OnboardingItemInfo(informationImage: UIImage(named: "1")!, title: "วิถีชีวิต", description: "ประกอบอาชีพเกษตรกรรมเป็นหลัก พื้นที่บนภูเขาปลูกข้าวไร่ พื้นที่ภายในแอ่งเขาอุดมสมบูรณ์ปลูกข้าวและพืชอื่นๆ มีการแลกเปลี่ยนประสบการณ์การใช้ชีวิตในพื้นที่ต่างๆของแต่ละชุมชน", pageIcon: UIImage(named: "1")!, color: bgOne, titleColor: textColor, descriptionColor: textColor, titleFont: titleFont, descriptionFont: descripFont),
-                OnboardingItemInfo(informationImage: UIImage(named: "2")!, title: "สภาพแวดล้อม", description: "ที่ราบสูง ภูเขา และเทือกเขา มักมีประชาชนไม่หนาแน่น มีความหลากหลายทางภาษา วัฒนธรรมและชาติพันธุ์ ชุมชนมีขนาดเล็ก พื่งพาตนเอง กระจัดกระจายในทางการเมือง", pageIcon: UIImage(named: "2")!, color: bgTwo, titleColor: textColor, descriptionColor: textColor, titleFont: titleFont, descriptionFont: descripFont),
-                OnboardingItemInfo(informationImage: UIImage(named: "3")!, title: "วัฒนธรรม", description: "สภาพแวดล้อมท่ีต่างกัน ทำให้เกิดความหลากหลายทางวัฒนธรรม ความเขื่อและขบนธรรมเนียมประเพณี มีความเชื่อว่ามีวิญญาณสิงอยู่ตามส่วนต่างๆ ของธรรมขาติ มีพิธีกรรมที่โดดเด่นร่วมกันคือการไหว้ เพื่อแลกกับความคุ้มครองวิญญาณ", pageIcon: UIImage(named: "3")!, color: bgThree, titleColor: textColor, descriptionColor: textColor, titleFont: titleFont, descriptionFont: descripFont)][index]
+        
+        
+        
+        return [OnboardingItemInfo(informationImage: UIImage(named: "2")!, title: "วิถีชีวิต", description: "ประกอบอาชีพเกษตรกรรมเป็นหลัก พื้นที่บนภูเขาปลูกข้าวไร่ พื้นที่ภายในแอ่งเขาอุดมสมบูรณ์ปลูกข้าวและพืชอื่นๆ มีการแลกเปลี่ยนประสบการณ์การใช้ชีวิตในพื้นที่ต่างๆของแต่ละชุมชน", pageIcon: UIImage(named: "1")!, color: bgOne, titleColor: textColor, descriptionColor: textColor, titleFont: titleFont, descriptionFont: descripFont),
+                OnboardingItemInfo(informationImage: UIImage(named: "3")!, title: "สภาพแวดล้อม", description: "ที่ราบสูง ภูเขา และเทือกเขา มักมีประชาชนไม่หนาแน่น มีความหลากหลายทางภาษา วัฒนธรรมและชาติพันธุ์ ชุมชนมีขนาดเล็ก พื่งพาตนเอง กระจัดกระจายในทางการเมือง", pageIcon: UIImage(named: "2")!, color: bgTwo, titleColor: textColor, descriptionColor: textColor, titleFont: titleFont, descriptionFont: descripFont),
+                OnboardingItemInfo(informationImage: UIImage(named: "1")!, title: "วัฒนธรรม", description: "สภาพแวดล้อมท่ีต่างกัน ทำให้เกิดความหลากหลายทางวัฒนธรรม ความเขื่อและขบนธรรมเนียมประเพณี มีความเชื่อว่ามีวิญญาณสิงอยู่ตามส่วนต่างๆ ของธรรมขาติ มีพิธีกรรมที่โดดเด่นร่วมกันคือการไหว้ เพื่อแลกกับความคุ้มครองวิญญาณ", pageIcon: UIImage(named: "3")!, color: bgThree, titleColor: textColor, descriptionColor: textColor, titleFont: titleFont, descriptionFont: descripFont)][index]
     }
     
     

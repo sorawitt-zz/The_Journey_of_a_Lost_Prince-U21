@@ -55,7 +55,10 @@ extension MiniMenuViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("select")
-       let vc = UIStoryboard.
-        show(pinVC, sender: self)
+        let viewController:
+            UIViewController = UIStoryboard(
+                name: "Main", bundle: nil
+                ).instantiateViewController(withIdentifier: "LearningViewController") as! LearningViewController
+        show(viewController, sender: self)
     }
 }
